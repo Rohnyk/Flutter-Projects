@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:delivora/components/customAppBar.dart';
-import 'package:delivora/components/carouselslider.dart';
+import 'package:delivora/components/categoryslider.dart';
 import 'package:delivora/components/controltabs.dart';
 import 'package:delivora/constant.dart';
 
@@ -14,14 +14,13 @@ class HomeScreen extends StatelessWidget {
             SliverPadding(
               padding: EdgeInsets.only(bottom: 20.0),
             ),
-            SliverFillRemaining(
-              child: Column(
-                children: <Widget>[
-                  //TODO: Change into Carousal Builder after integrating with firebase
+            SliverList(
+              delegate: SliverChildListDelegate(
+                <Widget>[
                   CustomCarouselSlider(),
                 ],
               ),
-            )
+            ),
           ],
         ),
         bottomNavigationBar: ControlTabs(kPageTab, false));
