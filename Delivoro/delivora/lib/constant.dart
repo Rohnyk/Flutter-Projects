@@ -1,40 +1,57 @@
 import 'package:flutter/material.dart';
 
-const kCategoryTab = [
-  Tab(
-    text: "All",
-  ),
-  Tab(
-    text: "Grocery",
-  ),
-  Tab(
-    text: "Vegetables",
-  ),
-  Tab(
-    text: "Food",
-  ),
-  Tab(
-    text: "Medicine",
-  )
+const kSecondaryColor = Color(0xff24C8D0);
+
+const kCategoryList = [
+  "All",
+  "Grocery",
+  "Vegetables",
+  "Food",
+  "Medicine",
 ];
 
 const kPageTab = [
   Tab(
     icon: Icon(
       Icons.home,
-      color: Color(0xFFDF6E63),
+      color: kSecondaryColor,
     ),
   ),
   Tab(
     icon: Icon(
       Icons.shopping_cart,
-      color: Color(0xFFDF6E63),
+      color: kSecondaryColor,
     ),
   ),
   Tab(
     icon: Icon(
       Icons.notifications,
-      color: Color(0xFFDF6E63),
+      color: kSecondaryColor,
+    ),
+  ),
+  Tab(
+    icon: Icon(
+      Icons.settings,
+      color: kSecondaryColor,
     ),
   )
 ];
+
+const kInputDecorationTextField = InputDecoration(
+  labelText: 'Name',
+  labelStyle: TextStyle(
+    color: Colors.white,
+  ),
+  contentPadding: EdgeInsets.symmetric(horizontal: 10),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: kSecondaryColor, width: 1.0),
+    borderRadius: BorderRadius.all(Radius.circular(15.0)),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: kSecondaryColor, width: 2.0),
+    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+  ),
+);

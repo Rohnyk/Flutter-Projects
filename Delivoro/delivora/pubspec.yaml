@@ -31,6 +31,8 @@ dependencies:
   flutter_native_splash: ^1.2.1
   outline_search_bar: ^2.2.0
   carousel_slider: ^4.0.0
+  firebase_core: ^1.4.0
+  firebase_auth: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -41,6 +43,8 @@ flutter_native_splash:
   image: assets/splash.png
   android: true
   ios: true
+  web: false
+  image_dark: assets/splash.png
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -69,6 +73,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Balsamiq Sans
+      fonts:
+        - asset: fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf  
   # fonts:
   #   - family: Schyler
   #     fonts:
