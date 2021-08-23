@@ -1,10 +1,13 @@
-import 'package:delivora/screens/loginscreen.dart';
+import 'package:delivora/screens/otppage.dart';
 import 'package:delivora/screens/registration.dart';
 import 'package:flutter/material.dart';
 import 'package:delivora/screens/homescreen.dart';
 import 'package:delivora/screens/profilescreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(Delivoro());
 }
 
@@ -15,7 +18,7 @@ class Delivoro extends StatelessWidget {
       initialRoute: '/registrationscreen',
       routes: {
         '/': (context) => HomeScreen(),
-        '/loginscreen': (context) => LoginScreen(),
+        '/otpscreen': (context) => OTPScreen(),
         '/registrationscreen': (context) => RegistrationScreen(),
         '/profilescreen': (context) => ProfileScreen(),
       },

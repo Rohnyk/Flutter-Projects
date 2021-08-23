@@ -1,6 +1,6 @@
 import 'package:delivora/constant.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+//import 'package:carousel_slider/carousel_slider.dart';
 
 //TODO: After firebase integration convert into CarouselSliderBuilder
 class CustomCarouselSlider extends StatelessWidget {

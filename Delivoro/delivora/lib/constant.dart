@@ -55,3 +55,20 @@ const kInputDecorationTextField = InputDecoration(
     borderRadius: BorderRadius.all(Radius.circular(10.0)),
   ),
 );
+
+const kInputDecorationSignInTextField = InputDecoration(
+  labelText: "Phone Number",
+  prefixText: "+91 ",
+  contentPadding: EdgeInsets.symmetric(horizontal: 10),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: kSecondaryColor, width: 1.0),
+    borderRadius: BorderRadius.all(Radius.circular(15.0)),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: kSecondaryColor, width: 2.0),
+    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+  ),
+);
